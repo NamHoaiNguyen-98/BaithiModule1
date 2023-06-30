@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    var flap = true
+
+    function checkString(str1,str2) {
+        let arr1 = str1.split("")
+        let arr2 = str2.split("")
+
+        if (arr1.length <= arr2.length) {
+            for (let i = 0; i < arr1.length; i++) {
+                for (let j = 0; j < arr2.length; j++) {
+                    if (arr1[i] !== arr2[j])
+                        return flap = false
+                }
+            }
+            return flap = true
+        } else {
+            return flap = false
+        }
+        if (flap===true) {
+            alert("chuỗi 1 nằm trong chuỗi 2")
+        } else {
+            alert("chuỗi 1 không nằm trong chuỗi 2")
+        }
+    }
+    let string1 = prompt("Nhập chuỗi 1: ")
+    let string2 = prompt("Nhập chuỗi 2: ")
+    checkString(string1,string2)
+
+
+</script>
+</html>

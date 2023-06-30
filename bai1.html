@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function timMax_thu3(array) {
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array.length; j++) {
+                if (array[j] > array[i]) {
+                    let temp = array[j]
+                    array[j] = array[i]
+                    array[i] = temp
+                }
+            }
+        }
+        document.write("Điểm thi cao thứ 3 trong mảng là: " + array[array.length - 3])
+    }
+    timMax_thu3([1, 5, 2, 10, 6, 8, 11])
+
+
+</script>
+</html>
